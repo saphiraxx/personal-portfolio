@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'universPro';
+    src: url('fonts/Univers\ Next\ Typewriter\ Pro\ Regular.ttf');
+}
+
+@font-face {
+    font-family: 'arabotoBlack';
+    src: url(fonts/Araboto\ Black\ 400.ttf);
+}
+  
+  @font-face {
+    font-family: 'arabotoNormal';
+    src: url(fonts/Araboto\ Normal\ 400.ttf);
+}
+  
+  @font-face {
+    font-family: 'arabotoLight';
+    src: url('fonts/Araboto\ Light\ 400.ttf');
+}
+  
+  @font-face {
+    font-family: 'arabotoThin';
+    src: url('fonts/Araboto\ Thin\ 400.ttf');
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: #26d100;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+body , html {
+    overflow-x: hidden;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 20px;
+    max-width: 1220px;
+    color: whitesmoke;
+    z-index: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    margin-right: auto;
+    margin-left: 30px;
+    margin-top: 10PX;
+}
+
+.name {
+    font-family: 'arabotoThin';
+    font-size: 3vmin;
+}
+
+.last-name {
+    font-family: 'arabotoNormal';
+    font-size: 3vmin;
+}
+
+.nav-links {
+    margin-top: 10PX;
+    font-size: 1.6vmin;
+    font-family: 'arabotoNormal';
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+/* .header-img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/foto/home-img.png);
+    opacity: 0.2;
+    background-position: bottom;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column-reverse;
+} */
+
+.header {
+    display: flex;
+    margin-top: -3%;
+}
+
+.header-content {
+    width: 47%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 12%;
+    margin-top: 8%;
+    align-items: flex-start;
+}
+
+.receive {
+    font-family: 'universPro';
+    margin-bottom: 3%; 
+    color: whitesmoke; 
+}
+  
+.principal-title{
+text-shadow: rgb(0, 0, 0) 1px 2px 7px;
+font-family: 'arabotoThin';
+font-size: 56px;
+line-height: 75px;   
+color: whitesmoke;
+}
+
+.bold { 
+font-family: 'arabotoLight';
+animation: font-animate 3s linear infinite;
+}
+
+@keyframes font-animate {
+    0%{
+      opacity: 1;
+      color: white;
+    }
+    50%{
+      opacity: 1;
+      color: rgb(0, 255, 60);  }
+    100%{
+      opacity: 1;
+      color: white;
+    }
+  }
+
+.header-content p {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding: 0;
+    font-family: 'arabotoLight';
+    color: whitesmoke;
+}
+
+.hero img {
+    position: absolute;
+    padding-top: 11%;
+    width: 535px;
+    margin: 0 -70px;
+    opacity: 0.9;
+}
+
+.wave {
+    position: absolute;
+    background-image: url(/img/wave.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: 0;
+    left: 0;
+    height: 50vh;  
+    width: 100vw;
+    max-width: 100%;
+    filter:drop-shadow(0 0 10px rgb(66, 107, 58));
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #0aac1d;
+    border-radius: 30px;
+    color: black;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #484872;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .row {
+    margin-top: 50px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+.events .ctn {
+    margin-top: 30px;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 9%;
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+}
+
+.explore-content .line {
+    margin-bottom: 50px;
+}
+
+.explore-content p {
+    color: whitesmoke;
+}
+
+.explore-content .ctn {
+    margin-top: 40px;
+}
