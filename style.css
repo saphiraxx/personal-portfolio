@@ -25,7 +25,7 @@
 
 * {
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 a {
@@ -37,7 +37,7 @@ ul {
 }
 
 .active {
-    color: #26d100;
+    color: whitesmoke;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -55,9 +55,7 @@ body , html {
     right: 0;
     display: flex;
     padding: 20px;
-    max-width: 1220px;
     color: whitesmoke;
-    z-index: 1;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -69,7 +67,6 @@ body , html {
     flex-direction: column;
     line-height: 25px;
     margin-right: auto;
-    margin-left: 30px;
     margin-top: 10PX;
 }
 
@@ -109,19 +106,18 @@ body , html {
     flex-direction: column-reverse;
 } */
 
-.header {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    margin-top: -2%;
 }
 
 .header-content {
-    width: 47%;
-    padding: 100px;
+    width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 12%;
-    margin-top: 8%;
+    margin-top: 140px;
     align-items: flex-start;
 }
 
@@ -159,19 +155,18 @@ body , html {
   }
 
 .header-content p {
-    margin-top: 2%;
-    margin-bottom: 3%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 0;
     font-family: 'arabotoLight';
     color: whitesmoke;
+    width: 37vw;
 }
 
-.hero img {
-    position: absolute;
-    padding-top: 11%;
-    width: 525px;
-    margin: 0 -90px;
+.hero {
+    width: 130%;
     opacity: 0.8;
+    margin-top: 60px;
 }
 
 .wave {
